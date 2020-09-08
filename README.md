@@ -1,6 +1,6 @@
-# Google home page
+# Google homepage
 
-Practice project from: The Odin Project using HTML/CSS where I use mainly CSS Grid. The goal was to clone Google home page using HTML and CSS without the functionalities.
+Practice project from The Odin Project using HTML/CSS where I use mainly CSS Grid. The goal was to clone Google home page using HTML and CSS without the functionalities.
 
 ## Todo
 
