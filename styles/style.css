@@ -1,0 +1,307 @@
+html,
+body {
+  font-family: arial, sans-serif;
+  height: 100vh;
+}  
+
+/* Top nav */
+
+nav {
+  display: grid;
+  grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+  grid-template-rows: 50px;
+  grid-template-areas: 
+  "about store . gmail images menu sign-in";
+  padding-top: 7px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.75;
+  font-size: 13px;
+}
+
+.about {
+  grid-area: about;
+  justify-self: center;
+  align-self: center;
+  margin-left: 38px;
+}
+
+.about:hover {
+  text-decoration: underline;
+}
+
+.store {
+  grid-area: store;
+  justify-self: center;
+  align-self: center;
+  margin-left: 38px;
+}
+
+.store:hover {
+  text-decoration: underline;
+}
+
+.gmail {
+  grid-area: gmail;
+  justify-self: center;
+  align-self: center;
+  margin-right: 115px;
+}
+
+.gmail:hover {
+  text-decoration: underline;
+}
+
+.images {
+  grid-area: images;
+  justify-self: center;
+  align-self: center;
+  margin-right: 110px;
+}
+
+.images:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  grid-area: menu;
+  justify-self: center;
+  align-self: center;
+  color: #000;
+  opacity: .55;
+  cursor: pointer;
+  margin-right: 110px;
+}
+
+.menu:hover {
+  opacity: .85;
+}
+
+.app-menu {
+  height: 24px;
+}
+
+.sign-in {
+  grid-area: sign-in;
+  justify-self: center;
+  align-self: center;
+  font-weight: bold;
+
+  cursor: default;
+  line-height: 28px;
+  border-radius: 2px;
+  color: white;
+
+  border: 1px solid rgb(66, 133, 244) !important;
+  background: rgb(66, 133, 244) !important;
+  
+  opacity: 1;
+  height: 28px;
+  width: 44px;
+  padding: 0 12px;
+  margin-right: 78px;
+}
+
+/* Logo, search bar and buttons */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 70px 70px;
+  grid-template-areas:
+  ". logo ."
+  ". search-bar ."
+  ". buttons .";
+}
+
+.logo {
+  grid-area: logo;
+  justify-self: center;
+  align-self: flex-end;
+  margin-bottom: -55px;
+}
+
+.search-bar {
+  grid-area: search-bar;
+}
+
+.search {
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  height: 42px;
+  width: 575px;
+  margin-top: 20px;
+}
+
+.search:hover {
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  border-color: rgba(223,225,229,0);
+}
+
+img.search-icon {
+  display: block;
+  margin-top: -33px;
+  margin-left: 15px;
+  color: #9AA0A6;
+  opacity: .35;
+}
+
+.buttons {
+  grid-area: buttons; 
+  justify-self: center;
+  margin-top: 14px;
+}
+
+.button-one {
+  border-radius: 4px;
+  color: #5F6368;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+}
+
+.button-one:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
+
+.button-two {
+  border-radius: 4px;
+  color: #5F6368;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+}
+
+.button-two:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
+
+/* Footer left/right */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.75;
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-top: -5px;
+}
+
+.right-footer { 
+  display: grid;
+  grid-template-columns: 70px 70px 70px;
+  grid-template-rows: 50px;
+  grid-template-areas: 
+  "privacy terms settings";
+}
+
+.left-footer {
+  display: grid;
+  grid-template-columns: 70px 70px 160px;
+  grid-template-rows: 50px;
+  grid-template-areas: 
+  "advertising business hsw";
+  margin-left: 30px;
+}
+
+.privacy {
+  grid-area: privacy;
+  align-self: center;
+  justify-self: center;
+  margin-right: 38px;
+}
+
+.privacy:hover {
+  text-decoration: underline;
+}
+  
+.terms {
+  grid-area: terms;
+  align-self: center;
+  justify-self: center;
+  margin-right: 38px;
+}
+
+.terms:hover {
+  text-decoration: underline;
+}
+ 
+.settings {
+  grid-area: settings;
+  align-self: center;
+  justify-self: center;
+  margin-right: 38px;
+}
+
+.settings:hover {
+  text-decoration: underline;
+}
+
+.advertising {
+  grid-area: advertising;
+  align-self: center;
+  justify-self: center;
+}
+
+.advertising:hover {
+  text-decoration: underline;
+}
+
+.business {
+  grid-area: business;
+  align-self: center;
+  justify-self: center;
+  margin-left: 38px;
+}
+
+.business:hover {
+  text-decoration: underline;
+}
+
+.hsw {
+  grid-area: hsw;
+  align-self: center;
+  justify-self: center;
+  margin-left: 38px;
+}
+
+.hsw:hover {
+  text-decoration: underline;
+}
+
